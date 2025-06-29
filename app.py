@@ -8,8 +8,11 @@ class SimpleHandler(BaseHTTPRequestHandler):
        self.end_headers()
        self.wfile.write(b"<html><body><h1> Hello MF </h1></body></html>")
 
+     #def do_POST(self):
+
+
 def run(server_class = HTTPServer, handler_class = SimpleHandler, port = 8080):
-       server_address = ('',port)
+       server_address = ('0.0.0.0',port)
        httpd = server_class(server_address, handler_class)
        print ("starting MF server")
        httpd.serve_forever()
