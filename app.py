@@ -53,7 +53,7 @@ class SimpleHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"File upload failed")
 
 
-def run(server_class = HTTPServer, handler_class = SimpleHandler, port = 8080):
+def run(server_class = HTTPServer, handler_class = SimpleHandler, port = 5000):
        server_address = ('0.0.0.0',port)
        httpd = server_class(server_address, handler_class)
        print ("starting MF server")
