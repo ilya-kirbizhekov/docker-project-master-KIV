@@ -3,6 +3,7 @@ import os
 
 UPLOAD_DIR = "./images"
 
+
 class SimpleHandler(BaseHTTPRequestHandler):
     def do_GET(self):
        self.send_response(200)
