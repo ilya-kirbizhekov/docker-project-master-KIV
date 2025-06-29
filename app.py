@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
 
 UPLOAD_DIR = "./images"
-
+# note
 
 class SimpleHandler(BaseHTTPRequestHandler):
     def do_GET(self):
